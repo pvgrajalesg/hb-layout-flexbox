@@ -7,6 +7,7 @@
 h1 {
     color: blue;
     text-align: center;
+    padding-top: 20px;
 }
 
 .flex-container {
@@ -15,93 +16,93 @@ h1 {
     margin: 0 auto;
   }
 
-  .flex-container .container1 {
-    margin-top: 20px;
+.container1 {
+  margin-top: 20px;
+  background-color: green;
+  height: 80px;
+}
+
+.container2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container2 .container{
+  margin-right: 20px;
+  background-color: green;
+  width: calc(100%/2);
+  height: 300px;
+}
+
+.container2 .container:last-child{
+  margin-right: 0px;
+}
+
+.container3 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container3 .container{
+  margin-right: 20px;
+  background-color: green;
+  width: calc(100%/3);
+  height: 120px;
+}
+
+.container3 .container:last-child{
+  margin-right: 0px;
+}
+
+.container4{
+  margin-top: 20px;
+  background-color: green;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.container4 .container{
+  background-color: blue;
+  height: 150px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+@media (max-width:500px){
+  .container2 {
     display: flex;
-    background-color: green;
-    height: 80px;
+    flex-direction: column;
+    width: 100%; 
   }
 
-  .flex-container .container2 {
+  .container2 .container{
+    width: 100%;  
+  }
+
+  .container2 .container:last-child{
     margin-top: 20px;
+  }
+
+  .container3 {
     display: flex;
-    flex-direction: row;
-  }
-
-  .flex-container .container2 .container21{
-    margin-right: 20px;
-    background-color: green;
-    width: calc(100%/2);
-    height: 300px;
-  }
-
-  .flex-container .container2 .container21:last-child{
-    margin-right: 0px;
-  }
-
-  .flex-container .container3 {
+    flex-direction: column;
+    width: 100%;
     margin-top: 20px;
-    display: flex;
-    flex-direction: row;
   }
 
-  .flex-container .container3 .container31{
-    margin-right: 20px;
-    background-color: green;
-    width: calc(100%/3);
-    height: 120px;
-  }
-
-  .flex-container .container3 .container31:last-child{
-    margin-right: 0px;
-  }
-
-  .flex-container .container4{
+  .container3 .container{
     margin-top: 20px;
-    background-color: green;
-    height: 200px;
-    display: flex;
-    justify-content: center;
+    width: 100%;  
   }
 
-  .flex-container .container4 .container41{
-    background-color: blue;
-    height: 150px;
-    width: 150px;
-    margin: 20px;
+  .container3 .container:first-child{
+    margin-top: 0px;
   }
 
-  @media (max-width:500px){
-    .flex-container .container2 {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .flex-container .container2 .container21{
-      width: 100%;  
-    }
-
-    .flex-container .container2 .container21:last-child{
-      margin-top: 20px;
-    }
-
-    .flex-container .container3 {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      margin-top: 20px;
-    }
-
-    .flex-container .container3 .container31{
-      margin-top: 20px;
-      width: 100%;  
-    }
-
-    .flex-container .container3 .container31:first-child{
-      margin-top: 0px;
-    }
-
-  }
+}
 
   
 
