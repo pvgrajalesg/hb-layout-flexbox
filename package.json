@@ -1,0 +1,29 @@
+{
+  "name": "hb-layout-flexbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run lint && node-sass css/style.scss css/style.css --output-style compressed",
+    "lint": "stylelint 'css/**/*.scss' --config .stylelintrc --syntax scss",
+    "start": "npm run build -- -w --source-map true",
+    "precommit": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvgrajalesg/hb-layout-flexbox.git"
+  },
+  "author": "Paola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pvgrajalesg/hb-layout-flexbox/issues"
+  },
+  "homepage": "https://github.com/pvgrajalesg/hb-layout-flexbox#readme",
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "node-sass": "^4.7.1",
+    "stylelint": "^8.2.0",
+    "stylelint-config-recommended-scss": "^2.0.0",
+    "stylelint-scss": "^2.1.0"
+  }
+}
