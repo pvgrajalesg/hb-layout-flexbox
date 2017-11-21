@@ -1,0 +1,15 @@
+.footer{
+    margin-top: $margin-spacing;
+    background-color: $color;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+      background-color: blue;
+      height: 150px;
+      width: 150px;
+      margin-top: $margin-spacing;
+    }
+  }

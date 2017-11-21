@@ -1,0 +1,46 @@
+.flex-container {
+  max-width: $main-width;
+  margin-top: $margin-spacing;
+  display: flex;
+  flex-direction: row; 
+
+  .container-two, .container-three{
+    margin-right: $margin-spacing;
+    background-color: $color;
+    &:last-child{
+      margin-right: 0px;
+    }
+  } 
+
+  .container-two{
+    width: calc(100% / 2);
+    height: 300px;
+
+    @include small-screen{
+      width: $width;
+      &:last-child{
+        margin-top: $margin-spacing;
+      } 
+    }
+
+  }
+
+  .container-three{
+    width: calc(100% / 3);
+    height: 120px;
+
+    @include small-screen{
+      width: $width;
+      margin-top: $margin-spacing; 
+      &:first-child{
+        margin-top: 0px;
+      } 
+    }
+
+  }
+  
+  @include small-screen{   
+    flex-direction: column;
+  }
+
+}
