@@ -1,11 +1,12 @@
 .flex-container {
   max-width: $main-width;
+  margin: 0 auto;
   margin-top: $margin-spacing;
   display: flex;
   flex-direction: row; 
 
   .container-two, .container-three{
-    margin-right: $margin-spacing;
+    margin-right: 20px;
     background-color: $color;
     &:last-child{
       margin-right: 0px;

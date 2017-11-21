@@ -1,4 +1,6 @@
 .header {
+    max-width: $main-width;
+    margin: 0 auto;
     margin-top: $margin-spacing;
     background-color: $color;
     height: 80px;

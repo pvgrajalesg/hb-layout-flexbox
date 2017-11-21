@@ -1,5 +1,7 @@
 .footer{
+    margin: 0 auto;
     margin-top: $margin-spacing;
+    max-width: $main-width;
     background-color: $color;
     height: 200px;
     display: flex;
